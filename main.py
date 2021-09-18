@@ -9,7 +9,7 @@ if os.path.exists(os.getcwd() + "/config.json"):
 else:
     config = {"Token": "", "Prefix": "!"}
 
-    with open(os.getcwd() + "/config.json", "w") as f:
+    with open(os.getcwd() + "/config.json", "w+") as f:
         json.dump(config, f)
 
 token = configData["Token"]
